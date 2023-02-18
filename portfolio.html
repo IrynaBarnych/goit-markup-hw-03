@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
  <link rel="stylesheet" href="./css/styles.css">  
 </head>
@@ -16,7 +18,9 @@
 <body>
        
     <header>
-        <nav class="logo-nav list">
+        <div class="container">
+            <div class="header-container">
+        <nav class="header-nav">
             <a href="./index.html" class="logo_first">Web<span class="logo_second">Studio</span></a>
             <ul class="site-nav list">
                 <li><a href="./index.html" class="link">Studio</a></li>
@@ -24,18 +28,22 @@
                 <li><a href="" class="link">Contacts</a></li>
             </ul>
         </nav>
-        <address>
+        <address class="address-nav">
             <ul class="addres-contact list">
             <li><a href="mailto:info@devstudio.com" class="link current">info@devstudio.com</a></li>
             <li><a href="tel:+110001111111" class="link current">+11 (000) 111-11-11</a></li>
         </ul>        
         </address>
+    </div>
+    </div>
     </header>
+    
     
     <main>
         <section class="fon-section">
+            <div class="container">
             <!--button-services-->
-            <ul>
+            <ul class="button-port">
                 <li><button class="button-nav-port">All</button></li>
                 <li><button class="button-nav-port">Web Site</button></li>
                 <li><button class="button-nav-port">App</button></li>
@@ -44,20 +52,25 @@
             </ul>
 
         <!--services-->
-
-            
+        
+                <div class="photo">
                 <ul class="fon-photo">
+                
 
+                        
                         <li><img src="./images/img_banking.jpg" alt="Banking App Interface Concept App" width="360" height="300">
                     <h2 class="section-title">Banking App Interface Concept</h2>
                         <p class="description">App</p>
                         </li>
-                </ul>
+                  
+                </ul>   
                 <ul class="fon-photo">
+                    <div class="block-photo">
                         <li><img src="./images/img_payment.jpg" alt="Cashless Payment" width="360" height="300">
                     <h2 class="section-title">Cashless Payment</h2>
                     <p class="description">Marketing</p>
                     </li>
+                </div>
                 </ul>
                 <ul class="fon-photo">
                     <li><img src="./images/meditaion_app.jpg" alt="Meditaion App">
@@ -100,9 +113,9 @@
                     <h2 class="section-title">Fresh Coffee</h2>
                         <p class="description">Web Site</p>
                         </li>
+                    
                 </ul>
-            
-
+            </div>
         </section>
 
     </main>
